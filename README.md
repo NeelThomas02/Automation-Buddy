@@ -38,8 +38,7 @@
     ```bash
     # run all tests with headful Chrome
     pytest --maxfail=1 --disable-warnings -q
-    ```
-    ```bash
+
     # run in headless mode (for CI)
     pytest --maxfail=1 --disable-warnings -q --headless
     ```
