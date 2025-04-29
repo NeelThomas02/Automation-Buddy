@@ -41,7 +41,7 @@
 
     # run in headless mode (for CI)
     pytest --maxfail=1 --disable-warnings -q --headless
-    ```
+
 - HTML report is generated at reports/report.html
 - Screenshots on failures are saved under reports/screenshots/
 
