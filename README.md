@@ -66,5 +66,5 @@
 4. Run pytest to see your new test in action!
 
 ## 🤝 Contributing
-# Feel free to open issues or submit PRs. For major changes, please open an issue first to discuss your ideas.
+Feel free to open issues or submit PRs. For major changes, please open an issue first to discuss your ideas.
 
