@@ -42,8 +42,8 @@
     # run in headless mode (for CI)
     pytest --maxfail=1 --disable-warnings -q --headless
     ```
-- # HTML report is generated at reports/report.html
-- # Screenshots on failures are saved under reports/screenshots/
+- HTML report is generated at reports/report.html
+- Screenshots on failures are saved under reports/screenshots/
 
 ## ⚙️ CI Integration
 # This repo includes a GitHub Actions workflow (.github/workflows/ci.yml) that:
