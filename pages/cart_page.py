@@ -20,8 +20,10 @@ class CartPage:
     def go_to_checkout(self):
         # double‐check we’re on the cart page
         assert "/cart.html" in self.driver.current_url, f"Not on cart page: {self.driver.current_url}"
-        # now click the checkout button
+        # click the Checkout button
         self.wait.until(EC.element_to_be_clickable(self.CHECKOUT_BTN)).click()
+        # wait until we land on the first checkout step
+        self.wait.until(EC.url_contains("checkout-step-one.html"))
 
     def remove_all_items(self):
         for btn in self.driver.find_elements(*self.REMOVE_BTN):

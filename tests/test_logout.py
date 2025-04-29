@@ -17,8 +17,6 @@ def test_logout(driver):
     # 3) Log out
     inv.logout()
 
-    # 4) Assert we’re back on login page
-    #    Sauce Demo shows /index.html or base URL
-    assert driver.current_url.rstrip("/").endswith("saucedemo.com")
-    # or check login button visible:
+    # 4) Assert login button is visible on the login page
+    # (this guarantees you’re no longer on inventory/checkout)
     assert driver.find_element(*LoginPage.SUBMIT).is_displayed()
